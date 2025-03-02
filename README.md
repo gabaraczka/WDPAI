@@ -1,26 +1,27 @@
 # WDPAI - Lab1
 
-Projekt na zajęcia WDPAI Laboratorium 1
+Project for WDPAI Laboratory 1 classes
 
-## Instalacja i uruchomienie
+## Installation and commissioning
 
-1. Otwórz terminal.
-2. Przejdź do katalogu projektu.
-3. Uruchom Docker Compose poleceniem:
-    ```bash
-    docker compose up
-    ```
-   lub w osobnym terminalu (w tle):
-    ```bash
-    docker compose up -d
-    ```
-- Ponowne zbudowanie obrazu:
-    ```bash
-    docker compose build
-    ```
+1. Open a terminal.
+2. Go to the project directory.
+3. Run Docker Compose with the command:
 
-## Konfiguracja
+```bash
+docker compose up
+```
+or in a separate terminal (background):
+```bash
+docker compose up -d
+```
+- Rebuilding the image:
+```bash
+docker compose build
+```
 
-- Domyślny port `8080` (można zmienić w pliku [YAML Compose](./docker-compose.yaml))
-- Port wewnątrz kontenera: `80`.
-- Zmiana wersji PHP poprzez edycję pliku [Dockerfile](./docker/php/Dockerfile).
+## Configuration
+
+- Default port '8080' (can be changed in the [YAML Compose](./docker-compose.yaml) file)
+- Port inside the container: '80'.
+- Changing the PHP version by editing the [Dockerfile](./docker/php/Dockerfile) file.
